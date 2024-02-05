@@ -1,0 +1,70 @@
+.job-list {
+    background-color: #94B2FF;
+    box-shadow: 2px 2px 4px #747474;
+    display: flex;
+    flex-direction: column;
+    margin: 8px;
+    border-radius: 16px;
+    width: 600px;
+}
+
+.job-title {
+    color: #FFFFFF;
+    font-size: 20px;
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 8px 8px 0 0;
+}
+
+.job-title .title {
+    font-weight: 600;
+
+}
+
+.job-title .category {
+    background-color: #FFFFFF;
+    color: #665CF2;
+    font-size: 12px;
+    font-weight: 400;
+    padding: 8px 16px;
+    border-radius: 16px;
+}
+
+.job-detail {
+    background-color: #FFFFFF;
+    border-radius: 16px;
+    color: #1E1E1E;
+    padding: 16px;
+}
+
+.working-days {
+    display: flex;
+    align-items: center;
+}
+
+.working-days .icon, .working-days .text {
+    padding: 8px;
+}
+
+.location {
+    display: flex;
+    align-items: center;
+}
+
+.location .icon, .location .text {
+    padding: 8px;
+}
+
+.button {
+    margin: 8px;
+    float: right;
+}
+
+.button a {
+    background-color: #665CF2;
+    color: #FFFFFF;
+    padding: 8px 64px;
+    border-radius: 8px;
+}

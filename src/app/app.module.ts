@@ -6,12 +6,18 @@ import { AppComponent } from './app.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import {MatIconModule} from '@angular/material/icon';
 import { NavbarComponent } from './navbar/navbar.component';
+import { PostJobComponent } from './post-job/post-job.component';
+import { FindJobComponent } from './find-job/find-job.component';
+import { JobListComponent } from './find-job/job-list/job-list.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     SidebarComponent,
-    NavbarComponent
+    NavbarComponent,
+    PostJobComponent,
+    FindJobComponent,
+    JobListComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,41 @@
+.find-job {
+    background-color: #FFFFFF;
+    color: #1E1E1E;
+    box-shadow: 2px 2px 4px #747474;
+    border-radius: 8px;
+    margin: 16px 32px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    color: #4452F2;
+    margin: 16px;
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.filter ul {
+    display: flex;
+    margin: 8px 8px;
+}
+
+.filter li {
+    font-weight: 500;
+    padding: 8px 16px;
+    margin: 0 8px;
+    border-radius: 16px;
+    box-shadow: 2px 2px 4px #747474;
+}
+
+.filter li:hover {
+    cursor: pointer;
+}
+
+.job-list {
+    margin: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
