@@ -1,5 +1,6 @@
 .sidebar {
     background-color: #FFFFFF;
+    font-weight: 500;
     width: 250px;
     height: 100%;
     position: fixed;
@@ -15,7 +16,6 @@ li {
     margin: 8px;
     border-radius: 8px;
     color: #4C4C4C;
-    font-family: 'Roboto', sans-serif;
     display: flex;
     align-items: center;
 }

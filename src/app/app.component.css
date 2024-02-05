@@ -1,5 +1,5 @@
 .main-content {
     position: relative;
     left: 250px;
-    background: ;
+    width: calc(100% - 250px);
 }
