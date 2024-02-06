@@ -9,6 +9,7 @@ import { NavbarComponent } from './navbar/navbar.component';
 import { PostJobComponent } from './post-job/post-job.component';
 import { FindJobComponent } from './find-job/find-job.component';
 import { JobListComponent } from './find-job/job-list/job-list.component';
+import { PostJobCreateComponent } from './post-job-create/post-job-create.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { JobListComponent } from './find-job/job-list/job-list.component';
     NavbarComponent,
     PostJobComponent,
     FindJobComponent,
-    JobListComponent
+    JobListComponent,
+    PostJobCreateComponent
   ],
   imports: [
     BrowserModule,
