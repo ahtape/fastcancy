@@ -19,6 +19,8 @@ li {
     color: #4C4C4C;
     display: flex;
     align-items: center;
+
+    font-size: 16px;
 }
 
 li:hover {

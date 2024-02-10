@@ -3,9 +3,7 @@
     box-shadow: 2px 2px 4px #747474;
     display: flex;
     flex-direction: column;
-    margin: 8px;
     border-radius: 16px;
-    width: 600px;
 }
 
 .job-title {

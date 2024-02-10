@@ -4,21 +4,25 @@
     box-shadow: 2px 2px 4px #747474;
     border-radius: 8px;
     margin: 16px 32px;
-    padding: 16px;
+    padding: 32px;
     display: flex;
     flex-direction: column;
 }
 
-h2 {
+.text h2 {
     color: #4452F2;
-    margin: 16px;
     font-size: 32px;
     font-weight: 600;
+    margin: 0 0 32px 0;
 }
 
 .filter ul {
     display: flex;
-    margin: 8px 8px;
+    margin: 0 0 32px 0;
+}
+
+.filter li:first-child {
+    margin: 0 8px 0 0;
 }
 
 .filter li {
@@ -34,8 +38,12 @@ h2 {
 }
 
 .job-list {
-    margin: 8px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 32px;
+}
+
+.job-item {
+    width: calc(50% - 16px);
 }

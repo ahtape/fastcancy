@@ -4,25 +4,28 @@
     box-shadow: 2px 2px 4px #747474;
     border-radius: 8px;
     margin: 16px 32px;
-    padding: 16px 32px;
+    padding: 32px;
     display: flex;
     flex-direction: column;
 }
 
 .icon {
     color: #4452F2;
+    width: fit-content;
+    margin: 0 0 32px 0;
 }
 
 .title h2 {
     color: #4452F2;
     font-size: 32px;
     font-weight: 600;
-    padding: 16px 0;
+    margin: 0 0 16px 32px;
 }
 
 .main-page {
     display: flex;
     gap: 5%;
+    margin: 0 32px;
 }
 
 .description {
@@ -32,7 +35,7 @@
 .description li {
     color: #4C4C4C;
     font-weight: 500;
-    padding: 8px;
+    margin: 0 0 32px 0;
 }
 
 .button {
@@ -49,6 +52,11 @@
     margin: 0 8px;
 }
 
+.description .button a:hover {
+    background-color: #4452F2;
+    transition: 0.3s;
+}
+
 .review-div {
     width: 30%;
 }
@@ -57,7 +65,7 @@
     padding: 16px;
     box-shadow: 2px 2px 4px #747474;
     border-radius: 8px;
-    margin: 0 0 16px 0;
+    margin: 0 0 32px 0;
 }
 
 .review .title {
@@ -77,8 +85,13 @@
 .review-div .button .cancel {
     color: #4452F2;
     padding: 8px 32px;
-    border: solid #4452F2;
+    border: solid transparent;
     border-radius: 8px;
     box-shadow: 2px 2px 4px #747474;
     margin: 0 8px;
+}
+
+.review-div .button .cancel:hover {
+    border: solid #4452F2;
+    transition: 0.3s;
 }

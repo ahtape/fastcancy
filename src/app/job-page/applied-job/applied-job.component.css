@@ -2,10 +2,8 @@
     background-color: #94B2FF;
     box-shadow: 2px 2px 4px #747474;
     display: flex;
-    margin: 8px 0;
     flex-direction: column;
     border-radius: 16px;
-    width: 1200px;
 }
 
 .job-title {

@@ -4,25 +4,28 @@
     box-shadow: 2px 2px 4px #747474;
     border-radius: 8px;
     margin: 16px 32px;
-    padding: 16px 32px;
+    padding: 32px;
     display: flex;
     flex-direction: column;
 }
 
 .icon {
     color: #4452F2;
+    max-width: fit-content;
+    margin: 0 0 32px 0;
 }
 
 .applicant-profile .title h2 {
     color: #4452F2;
     font-size: 32px;
     font-weight: 600;
-    padding: 16px 0;
+    margin: 0 0 16px 32px;
 }
 
 .main-page {
     display: flex;
     gap: 5%;
+    margin: 0 32px;
 }
 
 .profile {
@@ -32,7 +35,7 @@
 .profile li {
     color: #4C4C4C;
     font-weight: 500;
-    padding: 8px;
+    margin: 0 0 32px 0;
 }
 
 .profile .button {
@@ -56,7 +59,7 @@
     padding: 16px;
     box-shadow: 2px 2px 4px #747474;
     border-radius: 8px;
-    margin: 0 0 16px 0;
+    margin: 0 0 32px 0;
 }
 
 .review .title {
@@ -74,9 +77,9 @@
 }
 
 .review-div .button .accept {
-    color: #4452F2;
+    background-color: #665CF2;
+    color: #FFFFFF;
     padding: 8px 32px;
-    border: solid #4452F2;
     border-radius: 8px;
     box-shadow: 2px 2px 4px #747474;
     margin: 0 8px;
@@ -84,8 +87,19 @@
 
 .review-div .button .reject {
     color: #4452F2;
+    box-shadow: 2px 2px 4px #747474;
     padding: 8px 32px;
     border-radius: 8px;
-    box-shadow: 2px 2px 4px #747474;
     margin: 0 8px;
+    border: solid transparent;
+}
+
+.profile .button a:hover, .review-div .button .accept:hover  {
+    background-color: #4452F2;
+    transition: 0.3s;
+}
+
+.review-div .button .reject:hover {
+    border: solid #4452F2;
+    transition: 0.3s;
 }

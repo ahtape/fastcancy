@@ -4,7 +4,7 @@
     box-shadow: 2px 2px 4px #747474;
     border-radius: 8px;
     margin: 16px 32px;
-    padding: 16px 32px;
+    padding: 32px;
     display: flex;
     flex-direction: column;
 }
@@ -13,7 +13,7 @@
     box-shadow: 2px 2px 4px #747474;
     border-radius: 8px;
     display: flex;
-    margin: 16px 0;
+    margin: 0 0 32px 0;
 }
 
 .created, .applied {
@@ -26,15 +26,25 @@
     color: #4452F2;
 }
 
+.created-job-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 32px;
+}
+
+.created-job {
+    width: calc(50% - 16px);
+}
+
+.applied-job-list {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
 /* temp */
 .created {
     background-color: #665CF2;
     color: #FFFFFF;
-}
-
-.job-list {
-    margin: 8px 0;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
 }

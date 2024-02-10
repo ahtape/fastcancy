@@ -4,26 +4,32 @@
     box-shadow: 2px 2px 4px #747474;
     border-radius: 8px;
     margin: 16px 32px;
-    padding: 16px 32px;
+    padding: 32px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
-}
-
-h2, p {
-    margin: 8px 0;
 }
 
 h2 {
     color: #4452F2;
     font-size: 32px;
     font-weight: 600;
+    margin: 0 0 16px 0;
+}
+
+.text {
+    width: 66.66%;
+}
+
+.button {
+    width: 33.33%;
+    display: flex;
+    justify-content: center;
 }
 
 .button a {
     background-color: #665CF2;
     color: #FFFFFF;
-    padding: 16px 128px;
+    padding: 16px 100px;
     border-radius: 8px;
 }
 
