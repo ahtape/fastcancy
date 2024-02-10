@@ -1,0 +1,40 @@
+.job-page {
+    background-color: #FFFFFF;
+    color: #1E1E1E;
+    box-shadow: 2px 2px 4px #747474;
+    border-radius: 8px;
+    margin: 16px 32px;
+    padding: 16px 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.category {
+    box-shadow: 2px 2px 4px #747474;
+    border-radius: 8px;
+    display: flex;
+    margin: 16px 0;
+}
+
+.created, .applied {
+    width: 100%;
+    text-align: center;
+    padding: 16px 0;
+    border-radius: 8px;
+
+    /* temp */
+    color: #4452F2;
+}
+
+/* temp */
+.created {
+    background-color: #665CF2;
+    color: #FFFFFF;
+}
+
+.job-list {
+    margin: 8px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}

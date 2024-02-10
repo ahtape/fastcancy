@@ -22,16 +22,10 @@ li {
 }
 
 li:hover {
-    background-color: #5865F2;
+    cursor: pointer;
+    background-color: #4452F2;
     color: #FFFFFF;
     transition: 0.3s;
-    cursor: pointer;
-}
-
-/* temporary */
-.profile {
-    background-color: #5865F2;
-    color: #FFFFFF;
 }
 
 .icon {
@@ -42,4 +36,11 @@ li:hover {
 a {
   text-decoration: none;
   padding: 16px 16px 16px 0;
+}
+
+
+/* temporary */
+.profile {
+    background-color: #5865F2;
+    color: #FFFFFF;
 }

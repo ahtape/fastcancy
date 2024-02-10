@@ -10,6 +10,12 @@ import { PostJobComponent } from './post-job/post-job.component';
 import { FindJobComponent } from './find-job/find-job.component';
 import { JobListComponent } from './find-job/job-list/job-list.component';
 import { PostJobCreateComponent } from './post-job-create/post-job-create.component';
+import { JobPageComponent } from './job-page/job-page.component';
+import { CreatedJobComponent } from './job-page/created-job/created-job.component';
+import { AppliedJobComponent } from './job-page/applied-job/applied-job.component';
+import { JobDescriptionComponent } from './job-page/job-description/job-description.component';
+import { ApplicantProfileComponent } from './job-page/applicant-profile/applicant-profile.component';
+import { AppliedJobDescriptionComponent } from './job-page/applied-job-description/applied-job-description.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +25,13 @@ import { PostJobCreateComponent } from './post-job-create/post-job-create.compon
     PostJobComponent,
     FindJobComponent,
     JobListComponent,
-    PostJobCreateComponent
+    PostJobCreateComponent,
+    JobPageComponent,
+    CreatedJobComponent,
+    AppliedJobComponent,
+    JobDescriptionComponent,
+    ApplicantProfileComponent,
+    AppliedJobDescriptionComponent
   ],
   imports: [
     BrowserModule,

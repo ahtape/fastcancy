@@ -1,0 +1,91 @@
+.applicant-profile {
+    background-color: #FFFFFF;
+    color: #1E1E1E;
+    box-shadow: 2px 2px 4px #747474;
+    border-radius: 8px;
+    margin: 16px 32px;
+    padding: 16px 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.icon {
+    color: #4452F2;
+}
+
+.applicant-profile .title h2 {
+    color: #4452F2;
+    font-size: 32px;
+    font-weight: 600;
+    padding: 16px 0;
+}
+
+.main-page {
+    display: flex;
+    gap: 5%;
+}
+
+.profile {
+    width: 65%;
+}
+
+.profile li {
+    color: #4C4C4C;
+    font-weight: 500;
+    padding: 8px;
+}
+
+.profile .button {
+    float: right;
+}
+
+.profile .button a {
+    background-color: #665CF2;
+    color: #FFFFFF;
+    padding: 8px 64px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px #747474;
+    margin: 0 8px;
+}
+
+.review-div {
+    width: 30%;
+}
+
+.review {
+    padding: 16px;
+    box-shadow: 2px 2px 4px #747474;
+    border-radius: 8px;
+    margin: 0 0 16px 0;
+}
+
+.review .title {
+    color: #4C4C4C;
+    font-weight: 500;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 0 16px 0;
+    font-size: 20px;
+}
+
+.review-div .button {
+    display: flex;
+    justify-content: center;
+}
+
+.review-div .button .accept {
+    color: #4452F2;
+    padding: 8px 32px;
+    border: solid #4452F2;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px #747474;
+    margin: 0 8px;
+}
+
+.review-div .button .reject {
+    color: #4452F2;
+    padding: 8px 32px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px #747474;
+    margin: 0 8px;
+}
