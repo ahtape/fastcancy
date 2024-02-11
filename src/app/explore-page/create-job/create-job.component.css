@@ -1,0 +1,63 @@
+.create-job {
+    background-color: #FFFFFF;
+    color: #1E1E1E;
+    box-shadow: 2px 2px 4px #747474;
+    border-radius: 8px;
+    margin: 16px 32px;
+    padding: 32px;
+    display: flex;
+    flex-direction: column;
+}
+
+.icon {
+    color: #4452F2;
+    width: fit-content;
+    margin: 0 0 16px 0;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form h2 {
+    color: #4452F2;
+    font-size: 32px;
+    font-weight: 600;
+    margin: 0 0 32px 0;
+}
+
+.input {
+    color: #4C4C4C;
+    display: flex;
+    margin: 0 0 32px 0;
+}
+
+label {
+    font-weight: 600;
+    width: 20%;
+}
+
+input[type=text] {
+    color: #747474;
+    box-shadow: 2px 2px 4px #747474;
+    border-radius: 8px;
+    width: 480px;
+    padding: 10px 24px;
+    width: 80%;
+}
+
+input[type=submit] {
+    background-color: #665CF2;
+    color: #FFFFFF;
+    padding: 8px 64px;
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px #747474;
+    float: right;
+}
+
+input[type=submit]:hover {
+    cursor: pointer;
+    background-color: #4452F2;
+    transition: 0.3s;
+}
