@@ -46,7 +46,7 @@ const appRoutes: Routes = [
     component: ExplorePageComponent 
     },
   { 
-    path: 'create', 
+    path: 'explore/create', 
     component: CreateJobComponent 
     },
 
