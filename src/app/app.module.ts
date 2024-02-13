@@ -55,8 +55,13 @@ const appRoutes: Routes = [
     path: 'job',
     component: JobPageComponent,
     children: [
+      {
+        path: '',
+        redirectTo: 'created',
+        pathMatch: 'full'
+        },
       { 
-        path: 'created', 
+        path: 'created',
         component: CreatedJobListComponent
         },
       { 
@@ -66,15 +71,15 @@ const appRoutes: Routes = [
     ]
     },
   { 
-    path: 'job/created/detail', 
+    path: 'job/created/details', 
     component: CreatedJobDescriptionComponent 
     },
   { 
-    path: 'job/created/detail/applicant', 
+    path: 'job/created/details/applicant', 
     component: ApplicantProfileComponent 
     },
   { 
-    path: 'job/applied/detail', 
+    path: 'job/applied/details', 
     component: ApplicantProfileComponent 
     },
 ];

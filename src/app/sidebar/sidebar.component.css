@@ -9,40 +9,34 @@
     z-index: 10;
 }
 
+
 ul {
-    list-style-type: none;
+    display: flex;
+    flex-direction: column;
 }
 
 li {
     margin: 8px;
     border-radius: 8px;
-    color: #4C4C4C;
-    display: flex;
-    align-items: center;
-
-    font-size: 16px;
 }
 
-li:hover {
-    cursor: pointer;
+a {
+    color: #4C4C4C;
+    padding: 16px 16px 16px 64px;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+a:hover {
     background-color: #4452F2;
     color: #FFFFFF;
     transition: 0.3s;
 }
 
-.icon {
-    padding: 0 16px;
-    margin-left: 32px;
-}
-
-a {
-  text-decoration: none;
-  padding: 16px 16px 16px 0;
-}
-
-
-/* temporary */
-.profile {
+.active {
     background-color: #5865F2;
     color: #FFFFFF;
+    transition: 0.3s;
 }
