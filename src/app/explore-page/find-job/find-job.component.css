@@ -36,14 +36,3 @@
 .filter li:hover {
     cursor: pointer;
 }
-
-.job-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 32px;
-}
-
-.job-item {
-    width: calc(50% - 16px);
-}

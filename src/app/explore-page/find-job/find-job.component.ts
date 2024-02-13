@@ -6,5 +6,4 @@ import { Component } from '@angular/core';
   styleUrl: './find-job.component.css'
 })
 export class FindJobComponent {
-
 }

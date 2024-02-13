@@ -1,35 +1,37 @@
 <div class="job-list">
-    <div class="job-title">
-        <div class="title">
-            <h2>Retail Associate</h2>
+    <div class="job-item" *ngFor="let job of availableJobs |async">
+        <div class="job-title">
+            <div class="title">
+                <h2>{{job.title}}</h2>
+            </div>
+            <div class="category">
+                <h3>{{job.type}}</h3>
+            </div>
         </div>
-        <div class="category">
-            <h3>Economy</h3>
+        <div class="job-detail">
+            <ul>
+                <li class="description">
+                    <p>{{job.description}}</p>
+                </li>
+                <li class="working-days">
+                    <div class="icon">
+                        <mat-icon>calendar_today</mat-icon>
+                    </div>
+                    <div class="text">
+                        <p>{{job.dates}}</p>
+                        <p>{{job.hours}}</p>
+                    </div>
+                </li>
+                <li class="location">
+                    <div class="icon">
+                        <mat-icon>location_on</mat-icon>
+                    </div>
+                    <p>{{job.location}}</p>
+                </li>
+                <li class="button">
+                    <a href="#">Details</a>
+                </li>
+            </ul>
         </div>
-    </div>
-    <div class="job-detail">
-        <ul>
-            <li class="description">
-                <p>Assisting customers with shopping, operating cash registers, and stocking shelves</p>
-            </li>
-            <li class="working-days">
-                <div class="icon">
-                    <mat-icon>calendar_today</mat-icon>
-                </div>
-                <div class="text">
-                    <p>Thursday</p>
-                    <p>09:00 AM to 1:00 PM</p>
-                </div>
-            </li>
-            <li class="location">
-                <div class="icon">
-                    <mat-icon> location_on</mat-icon>
-                </div>
-                <p>Depok, Sleman</p>
-            </li>
-            <li class="button">
-                <a href="#">Details</a>
-            </li>
-        </ul>
     </div>
 </div>
