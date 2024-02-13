@@ -5,53 +5,48 @@
     
     <div class="form">
         <h2>Job Description</h2>
-        <form action="">
+        <form #jobForm = "ngForm" (ngSubmit)="postJob(jobForm)">
             <div class="input">
-                <label for="job-title">Job Title:</label>
-                <input type="text" id="job-title" name="job-title" placeholder="Enter the job name">
+                <label for="title">Job Title:</label>
+                <input type="text" id="title" name="title" placeholder="Enter the job name" ngModel required>
             </div>
-
+      
             <div class="input">
-                <label for="job-description">Job Description:</label>
-                <input type="text" id="job-description" name="job-description" placeholder="Describe the job">
+                <label for="description">Job Description:</label>
+                <input type="text" id="description" name="description" placeholder="Describe the job" ngModel required>
             </div>
-
+      
             <div class="input">
-                <label for="job-type">Job Type:</label>
-                <input type="text" id="job-type" name="job-type" placeholder="Choose the type of job">
+                <label for="type">Job Type:</label>
+                <input type="text" id="type" name="type" placeholder="Choose the type of job" ngModel required>
             </div>
-
+      
             <div class="input">
-                <label for="Location">Location:</label>
-                <input type="text" id="Location" name="Location" placeholder="Specify the location">
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" placeholder="Specify the location" ngModel required>
             </div>
-
+      
             <div class="input">
-                <label for="work-dates">Work Dates:</label>
-                <input type="text" id="work-dates" name="work-dates" placeholder="Choose the date">
+                <label for="dates">Work Dates:</label>
+                <input type="date" id="dates" name="dates" placeholder="Choose the date" ngModel required>
             </div>
-
+      
             <div class="input">
-                <label for="work-hours">Work Hours:</label>
-                <input type="text" id="work-hours" name="work-hours" placeholder="Specify the hours">
+                <label for="hours">Work Hours:</label>
+                <input type="time" id="hours" name="hours" placeholder="Specify the hours" ngModel required>
             </div>
-
+      
             <div class="input">
                 <label for="salary">Salary:</label>
-                <input type="text" id="salary" name="salary" placeholder="Enter the desired salary">
+                <input type="number" id="salary" name="salary" placeholder="Enter the desired salary" ngModel required>
             </div>
-
+      
             <div class="input">
-                <label for="photos">Photos:</label>
-                <input type="text" id="photos" name="photos" placeholder="Choose at least 3 photos from device">
+                <label for="workerAmount">Number of Workers:</label>
+                <input type="number" id="workerAmount" name="workerAmount" placeholder="Enter the workers amount" ngModel required>
             </div>
-
-            <div class="input">
-                <label for="worker-ammount">Number of Workers:</label>
-                <input type="text" id="worker-ammount" name="worker-ammount" placeholder="Enter the workers ammount">
-            </div>
-
-            <input type="submit" value="Post">
+      
+            <input type="submit">
         </form>
     </div>
 </div>
