@@ -26,12 +26,36 @@ import { AppliedJobListComponent } from './job-page/applied-job-list/applied-job
 import { ProfilePageComponent } from './profile-page/profile-page.component';
 import { ProfileEditComponent } from './profile-page/profile-edit/profile-edit.component';
 import { environment } from '../environments/environment';
+import { WelcomeComponent } from './welcome/welcome.component';
+import { LoginComponent } from './welcome/login/login.component';
+import { SignupComponent } from './welcome/signup/signup.component';
 
 const appRoutes: Routes = [
   { 
     path: '',
-    redirectTo: '/explore',
+    redirectTo: 'welcome',
     pathMatch: 'full'
+    },
+
+  // welcome
+  { 
+    path: '',
+    component: WelcomeComponent,
+    children: [
+      {
+        path: '',
+        redirectTo: 'login',
+        pathMatch: 'full'
+        },
+      { 
+        path: 'login',
+        component: LoginComponent
+        },
+      { 
+        path: 'signup', 
+        component: SignupComponent 
+        },
+    ]
     },
   
   // Profile page
@@ -107,7 +131,10 @@ const appRoutes: Routes = [
     CreatedJobListComponent,
     AppliedJobListComponent,
     ProfilePageComponent,
-    ProfileEditComponent
+    ProfileEditComponent,
+    WelcomeComponent,
+    LoginComponent,
+    SignupComponent
   ],
   imports: [
     BrowserModule,

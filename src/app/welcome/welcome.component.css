@@ -1,0 +1,5 @@
+.login {
+    /* margin-top: calc(50% - 480px); */
+    display: flex;
+    justify-content: center;
+}
