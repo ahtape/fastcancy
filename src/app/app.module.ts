@@ -2,6 +2,9 @@ import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MatIconModule } from '@angular/material/icon';
 import { RouterModule, Routes } from '@angular/router';
+import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
+import { getFirestore, provideFirestore } from '@angular/fire/firestore';
+import { FormsModule } from '@angular/forms';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -22,9 +25,7 @@ import { CreatedJobListComponent } from './job-page/created-job-list/created-job
 import { AppliedJobListComponent } from './job-page/applied-job-list/applied-job-list.component';
 import { ProfilePageComponent } from './profile-page/profile-page.component';
 import { ProfileEditComponent } from './profile-page/profile-edit/profile-edit.component';
-import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
-import { getFirestore, provideFirestore } from '@angular/fire/firestore';
-import { FormsModule } from '@angular/forms';
+import { environment } from '../environments/environment';
 
 const appRoutes: Routes = [
   { 
@@ -113,7 +114,7 @@ const appRoutes: Routes = [
     AppRoutingModule,
     MatIconModule,
     RouterModule.forRoot(appRoutes),
-    provideFirebaseApp(() => initializeApp({"projectId":"fastcancy","appId":"1:724925589736:web:cc6a12d90ba6995bde815d","storageBucket":"fastcancy.appspot.com","apiKey":"AIzaSyBYWINGHptQE2-8Lu6KDZCAF6yN4RDKjvc","authDomain":"fastcancy.firebaseapp.com","messagingSenderId":"724925589736","measurementId":"G-WHHY79MEMJ"})),
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideFirestore(() => getFirestore()),
     FormsModule
   ],
