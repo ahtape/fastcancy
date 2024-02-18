@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AuthService } from '../welcome/auth/auth.service';
 
 @Component({
   selector: 'app-explore-page',
@@ -7,4 +8,9 @@ import { Component } from '@angular/core';
 })
 export class ExplorePageComponent {
 
+  constructor(private authService: AuthService){}
+
+  getUserData() {
+    console.log(this.authService.user)
+  }
 }

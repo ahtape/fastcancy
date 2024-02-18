@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Firestore, addDoc, collection, collectionData } from '@angular/fire/firestore';
+import { Firestore, addDoc, collection } from '@angular/fire/firestore';
 import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
 

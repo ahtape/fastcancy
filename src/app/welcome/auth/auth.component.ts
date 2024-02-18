@@ -11,12 +11,14 @@ import { Router } from '@angular/router';
 })
 export class AuthComponent {
   isloginMode = true;
+  resData = {};
 
   onSwitchMode() {
     this.isloginMode = !this.isloginMode;
   }
 
   constructor (private authService: AuthService, private router: Router) {}
+
 
   onSubmit(form: NgForm) {
     if (!form.valid) {
@@ -38,6 +40,7 @@ export class AuthComponent {
     authObs.subscribe(
       resData => {
         console.log(resData);
+        this.resData = resData;
         this.router.navigate(['/main'])
       },
       error => {

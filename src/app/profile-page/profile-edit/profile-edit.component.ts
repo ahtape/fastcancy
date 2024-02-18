@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrl: './profile-edit.component.css'
 })
 export class ProfileEditComponent {
-
+  submitUser(userForm:any) {
+    console.log(userForm.value)
+  }
 }

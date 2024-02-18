@@ -3,14 +3,14 @@
 /* global css */
 body {
     background-color: #ECEBF2;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'poppins', sans-serif;
     max-width: 100%;
     overflow-x: hidden;
 }
 
 /* welcome page */
 .welcome {
-    background-image: url("img/welcome_page.png");
+    background-image: url("assets/img/welcome_page.png");
     background-attachment: fixed;
     background-position: center;
     max-width: 100%;

@@ -4,6 +4,10 @@
         <p>{{ isloginMode ? "Sign in to unlock your full experience!" : 'Create your account and start exploring!'}}</p>
     </div>
 
+    <div class="logo">
+        <img src="../../../assets/img/logo.jpg" alt="logo">
+    </div>
+
     <div class="forms">
         <form #authForm="ngForm" (ngSubmit)="onSubmit(authForm)">
             <div class="form email">

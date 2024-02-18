@@ -20,6 +20,14 @@ li {
     border-radius: 8px;
 }
 
+.logo {
+    margin-top: 32px;
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 a {
     color: #4C4C4C;
     padding: 16px 16px 16px 64px;

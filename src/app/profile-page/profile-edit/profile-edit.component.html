@@ -7,30 +7,30 @@
     </div>
 
     <div class="form">
-        <form action="">
+        <form #userForm="ngForm" (submit)="submitUser(userForm)">
             <div class="input">
-                <label for="job-title">Name:</label>
-                <input type="text" id="job-title" name="job-title" placeholder="Enter your name">
+                <label for="about">About:</label>
+                <input type="text" id="about" name="about" placeholder="Describe your expertise and experiences" ngModel required>
             </div>
 
             <div class="input">
-                <label for="job-description">Birthday:</label>
-                <input type="text" id="job-description" name="job-description" placeholder="Enter your birthday">
+                <label for="gender">Gender:</label>
+                <input type="text" id="gender" name="gender" placeholder="Enter your gender" ngModel required>
             </div>
 
             <div class="input">
-                <label for="job-type">Gender:</label>
-                <input type="text" id="job-type" name="job-type" placeholder="Choose your gender">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" placeholder="Enter your age" ngModel required>
             </div>
 
             <div class="input">
-                <label for="Location">Last education:</label>
-                <input type="text" id="Location" name="Location" placeholder="Enter your last education">
+                <label for="education">Last education:</label>
+                <input type="text" id="education" name="education" placeholder="Enter your last education" ngModel required>
             </div>
 
             <div class="input">
-                <label for="work-dates">Contact:</label>
-                <input type="text" id="work-dates" name="work-dates" placeholder="Enter your whatsapp number">
+                <label for="phone">Phone:</label>
+                <input type="number" id="phone" name="phone" placeholder="Enter your phone number" ngModel required>
             </div>
 
             <input type="submit" value="Save">
