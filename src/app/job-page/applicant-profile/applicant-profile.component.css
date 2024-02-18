@@ -1,7 +1,7 @@
 .applicant-profile {
     background-color: #FFFFFF;
     color: #1E1E1E;
-    box-shadow: 2px 2px 4px #747474;
+    box-shadow: 1px 1px 4px #747474;
     border-radius: 8px;
     margin: 16px 32px;
     padding: 32px;
@@ -47,7 +47,7 @@
     color: #FFFFFF;
     padding: 8px 64px;
     border-radius: 8px;
-    box-shadow: 2px 2px 4px #747474;
+    box-shadow: 1px 1px 4px #747474;
     margin: 0 8px;
 }
 
@@ -57,7 +57,7 @@
 
 .review {
     padding: 16px;
-    box-shadow: 2px 2px 4px #747474;
+    box-shadow: 1px 1px 4px #747474;
     border-radius: 8px;
     margin: 0 0 32px 0;
 }
@@ -81,13 +81,13 @@
     color: #FFFFFF;
     padding: 8px 32px;
     border-radius: 8px;
-    box-shadow: 2px 2px 4px #747474;
+    box-shadow: 1px 1px 4px #747474;
     margin: 0 8px;
 }
 
 .review-div .button .reject {
     color: #4452F2;
-    box-shadow: 2px 2px 4px #747474;
+    box-shadow: 1px 1px 4px #747474;
     padding: 8px 32px;
     border-radius: 8px;
     margin: 0 8px;

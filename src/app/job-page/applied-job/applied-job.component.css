@@ -1,6 +1,6 @@
 .job-list {
     background-color: #94B2FF;
-    box-shadow: 2px 2px 4px #747474;
+    box-shadow: 1px 1px 4px #747474;
     display: flex;
     flex-direction: column;
     border-radius: 16px;

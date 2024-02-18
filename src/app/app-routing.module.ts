@@ -13,6 +13,7 @@ import { AppliedJobListComponent } from './job-page/applied-job-list/applied-job
 import { CreatedJobDescriptionComponent } from './job-page/created-job-description/created-job-description.component';
 import { ApplicantProfileComponent } from './job-page/applicant-profile/applicant-profile.component';
 import { MainComponent } from './main/main.component';
+import { AppliedJobDescriptionComponent } from './job-page/applied-job-description/applied-job-description.component';
 
 const appRoutes: Routes = [
   { path: '', redirectTo: '/welcome', pathMatch: 'full' },
@@ -89,7 +90,7 @@ const appRoutes: Routes = [
     },
   { 
     path: 'job/applied/details', 
-    component: ApplicantProfileComponent
+    component: AppliedJobDescriptionComponent
     },
   ]},
 ];

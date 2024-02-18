@@ -11,7 +11,7 @@
     box-shadow: 2px 2px 4px #747474;
     border-radius: 8px;
     padding: 32px;
-    width: calc(60% - 48px);
+    width: calc(100% - 64px);
     display: flex;
     flex-direction: column;
     gap: 32px;
@@ -35,7 +35,7 @@
 .details ul {
     display: flex;
     flex-direction: column;
-    gap: 16px;
+    gap: 8px;
 }
 
 
@@ -50,6 +50,7 @@
     padding: 8px 64px;
 }
 
+/* 
 .review {
     color: #4C4C4C;
     font-weight: 500;
@@ -61,4 +62,9 @@
     box-shadow: 2px 2px 4px #747474;
     border-radius: 8px;
     width: calc(40% - 48px);
+} */
+
+/*  */
+.bold {
+    font-weight: 600;
 }

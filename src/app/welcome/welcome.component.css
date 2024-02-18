@@ -1,5 +1,5 @@
-.login {
-    /* margin-top: calc(50% - 480px); */
-    display: flex;
-    justify-content: center;
+.auth {
+    position: fixed;
+    left: calc(50% - 200px);
+    top: calc(50% - 300px);
 }

@@ -1,5 +1,10 @@
-.main-page {
+/* .main-page {
     position: relative;
     left: 250px;
     width: calc(100% - 250px);
+}
+ */
+
+.test {
+    height: 100%;
 }
