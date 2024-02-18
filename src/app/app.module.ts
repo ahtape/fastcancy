@@ -27,8 +27,9 @@ import { ProfilePageComponent } from './profile-page/profile-page.component';
 import { ProfileEditComponent } from './profile-page/profile-edit/profile-edit.component';
 import { environment } from '../environments/environment';
 import { WelcomeComponent } from './welcome/welcome.component';
-import { LoginComponent } from './welcome/login/login.component';
-import { SignupComponent } from './welcome/signup/signup.component';
+import { AuthComponent } from './welcome/auth/auth.component';
+import { getAuth, provideAuth } from '@angular/fire/auth';
+import { HttpClientModule } from '@angular/common/http';
 
 const appRoutes: Routes = [
   { 
@@ -44,16 +45,12 @@ const appRoutes: Routes = [
     children: [
       {
         path: '',
-        redirectTo: 'login',
+        redirectTo: 'signup',
         pathMatch: 'full'
         },
       { 
-        path: 'login',
-        component: LoginComponent
-        },
-      { 
         path: 'signup', 
-        component: SignupComponent 
+        component: AuthComponent 
         },
     ]
     },
@@ -133,17 +130,19 @@ const appRoutes: Routes = [
     ProfilePageComponent,
     ProfileEditComponent,
     WelcomeComponent,
-    LoginComponent,
-    SignupComponent
+    AuthComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatIconModule,
     RouterModule.forRoot(appRoutes),
+    HttpClientModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideFirestore(() => getFirestore()),
-    FormsModule
+    FormsModule,
+    provideFirebaseApp(() => initializeApp({"projectId":"fastcancy","appId":"1:724925589736:web:cc6a12d90ba6995bde815d","storageBucket":"fastcancy.appspot.com","apiKey":"AIzaSyBYWINGHptQE2-8Lu6KDZCAF6yN4RDKjvc","authDomain":"fastcancy.firebaseapp.com","messagingSenderId":"724925589736","measurementId":"G-WHHY79MEMJ"})),
+    provideAuth(() => getAuth())
   ],
   providers: [],
   bootstrap: [AppComponent]

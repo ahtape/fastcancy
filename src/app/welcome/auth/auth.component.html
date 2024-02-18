@@ -1,0 +1,25 @@
+<div class="signup">
+    <div class="title">
+        <h2>{{ isloginMode ? "Welcome Back!" : 'Create Account' }}</h2>
+        <p>{{ isloginMode ? "Sign in to unlock your full experience!" : 'Create your account and start exploring!'}}</p>
+    </div>
+
+    <div class="forms">
+        <form #authForm="ngForm" (ngSubmit)="onSubmit(authForm)">
+            <div class="form email">
+                <label for="description">E-mail:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your e-mail" ngModel required email>
+            </div>
+      
+            <div class="form password">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" ngModel required minlength="8">
+            </div>
+            
+            <div class="submit">
+                <button class="submit" type="submit">{{ isloginMode ? 'Sign in' : 'Sign up'}}</button>
+            </div>
+        </form>
+    </div>
+    <p class="no-acc">{{ isloginMode ? "Don't have an account?" : 'Already have an account?'}} <a (click)="onSwitchMode()">{{ isloginMode ? "Sign up" : 'Sign in'}}</a></p>
+</div>
