@@ -13,13 +13,16 @@
                 <li class="description">
                     <p>{{job.description}}</p>
                 </li>
+                <li class="salary">
+                    <p>Salary: IDR {{job.salary}}</p>
+                </li>
                 <li class="working-days">
                     <div class="icon">
                         <mat-icon>calendar_today</mat-icon>
                     </div>
                     <div class="text">
-                        <p>{{job.dates}}</p>
-                        <p>{{job.hours}}</p>
+                        <p>{{job.startDay}} to {{job.endDay}}</p>
+                        <p>{{job.startTime}} to {{job.endTime}}</p>
                     </div>
                 </li>
                 <li class="location">
@@ -30,7 +33,7 @@
                 </li>
             </ul>
             <div class="button">
-                <a href="#">Details</a>
+                <a href="javascript:void(0)">Apply</a>
             </div>
         </div>
     </div>

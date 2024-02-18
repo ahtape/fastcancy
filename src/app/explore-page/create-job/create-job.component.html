@@ -26,14 +26,42 @@
                 <input type="text" id="location" name="location" placeholder="Specify the location" ngModel required>
             </div>
       
-            <div class="input">
-                <label for="dates">Work Dates:</label>
-                <input type="date" id="dates" name="dates" placeholder="Choose the date" ngModel required>
+            <div class="input days">
+                <label for="days">Work Days:</label>
+                <div class="from-to">
+                    <p>from</p>
+                    <select name="startDay" id="startDay" ngModel required>
+                        <option disabled selected value> Select day </option>
+                        <option value="Sunday">Sunday</option>
+                        <option value="Monday">Monday</option>
+                        <option value="Tuesday">Tuesday</option>
+                        <option value="Wednesday">Wednesday</option>
+                        <option value="Thursday">Thursday</option>
+                        <option value="Friday">Friday</option>
+                        <option value="Saturday">Saturday</option>
+                    </select>
+                    <p>to</p>
+                    <select name="endDay" id="endDay" ngModel required>
+                        <option disabled selected value> Select day </option>
+                        <option value="Sunday">Sunday</option>
+                        <option value="Monday">Monday</option>
+                        <option value="Tuesday">Tuesday</option>
+                        <option value="Wednesday">Wednesday</option>
+                        <option value="Thursday">Thursday</option>
+                        <option value="Friday">Friday</option>
+                        <option value="Saturday">Saturday</option>
+                    </select>
+                </div>
             </div>
       
             <div class="input">
                 <label for="hours">Work Hours:</label>
-                <input type="time" id="hours" name="hours" placeholder="Specify the hours" ngModel required>
+                <div class="from-to">
+                    <p>from</p>
+                    <input type="time" id="startTime" name="startTime" ngModel required>
+                    <p>to</p>
+                    <input type="time" id="endTime" name="endTime" ngModel required>
+                </div>
             </div>
       
             <div class="input">

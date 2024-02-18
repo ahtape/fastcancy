@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Firestore, addDoc, collection, collectionData } from '@angular/fire/firestore';
+import { Router } from '@angular/router';
 import { Observable } from 'rxjs';
 
 @Component({
@@ -10,7 +11,7 @@ import { Observable } from 'rxjs';
 export class CreateJobComponent {
   availableJobs!: Observable<any>;
 
-  constructor(private firestore: Firestore) {
+  constructor(private firestore: Firestore, private router: Router) {
   }
 
   postJob(jobForm:any) {
@@ -23,5 +24,8 @@ export class CreateJobComponent {
     .catch((err) => {
       console.log('error');
     })
+
+    jobForm.reset();
+    this.router.navigate(['/main/explore'])
   }
 }

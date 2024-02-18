@@ -20,7 +20,7 @@ const appRoutes: Routes = [
     {
       path: '',
       redirectTo: 'auth',
-      pathMatch: 'full'
+      pathMatch: 'prefix'
       },
     { 
       path: 'auth', 
@@ -36,7 +36,7 @@ const appRoutes: Routes = [
     {
       path: '',
       redirectTo: 'explore',
-      pathMatch: 'full'
+      pathMatch: 'prefix'
       },
     
       // Profile page
@@ -95,7 +95,7 @@ const appRoutes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(appRoutes)],
+  imports: [RouterModule.forRoot(appRoutes, {useHash:true})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
