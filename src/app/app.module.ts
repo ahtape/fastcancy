@@ -1,10 +1,11 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 import { MatIconModule } from '@angular/material/icon';
-import { RouterModule, Routes } from '@angular/router';
 import { initializeApp, provideFirebaseApp } from '@angular/fire/app';
 import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { FormsModule } from '@angular/forms';
+import { getAuth, provideAuth } from '@angular/fire/auth';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -28,86 +29,8 @@ import { ProfileEditComponent } from './profile-page/profile-edit/profile-edit.c
 import { environment } from '../environments/environment';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { AuthComponent } from './welcome/auth/auth.component';
-import { getAuth, provideAuth } from '@angular/fire/auth';
-import { HttpClientModule } from '@angular/common/http';
+import { MainComponent } from './main/main.component';
 
-const appRoutes: Routes = [
-  { 
-    path: '',
-    redirectTo: 'welcome',
-    pathMatch: 'full'
-    },
-
-  // welcome
-  { 
-    path: '',
-    component: WelcomeComponent,
-    children: [
-      {
-        path: '',
-        redirectTo: 'signup',
-        pathMatch: 'full'
-        },
-      { 
-        path: 'signup', 
-        component: AuthComponent 
-        },
-    ]
-    },
-  
-  // Profile page
-  { 
-    path: 'profile', 
-    component: ProfilePageComponent 
-    },
-  { 
-    path: 'profile/edit', 
-    component: ProfileEditComponent 
-    },
-
-  // Explore page
-  { 
-    path: 'explore', 
-    component: ExplorePageComponent 
-    },
-  { 
-    path: 'explore/create', 
-    component: CreateJobComponent 
-    },
-
-  // Job Page
-  { 
-    path: 'job',
-    component: JobPageComponent,
-    children: [
-      {
-        path: '',
-        redirectTo: 'created',
-        pathMatch: 'full'
-        },
-      { 
-        path: 'created',
-        component: CreatedJobListComponent
-        },
-      { 
-        path: 'applied', 
-        component: AppliedJobListComponent 
-        },
-    ]
-    },
-  { 
-    path: 'job/created/details', 
-    component: CreatedJobDescriptionComponent 
-    },
-  { 
-    path: 'job/created/details/applicant', 
-    component: ApplicantProfileComponent 
-    },
-  { 
-    path: 'job/applied/details', 
-    component: ApplicantProfileComponent 
-    },
-];
 
 @NgModule({
   declarations: [
@@ -130,13 +53,13 @@ const appRoutes: Routes = [
     ProfilePageComponent,
     ProfileEditComponent,
     WelcomeComponent,
-    AuthComponent
+    AuthComponent,
+    MainComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     MatIconModule,
-    RouterModule.forRoot(appRoutes),
     HttpClientModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
     provideFirestore(() => getFirestore()),
