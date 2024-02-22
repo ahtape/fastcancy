@@ -19,6 +19,7 @@ git clone https://github.com/ahtape/fastcancy.git
 
 Run the development server:
 ```
+npm install -g @angular/cli@next
 ng serve
 ```
 Open http://localhost:4200 with your browser to see the preview.
